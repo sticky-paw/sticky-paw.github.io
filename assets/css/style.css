@@ -893,7 +893,7 @@ body,html{
 #stars1::after, #stars2::after, #stars3::after {
   content: '';
   position: absolute;
-  top: 2000px; /* extend beyond visible height for scroll loop */
+  top: -2000px;
   background: transparent;
 }
 
