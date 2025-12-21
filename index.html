@@ -1,47 +1,77 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celestial Socials</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #0a0a0a;
-            color: white;
-            overflow-x: hidden;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
-        /* Custom scrollbar to keep it sleek */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0a0a0a;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #333;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #444;
-        }
-    </style>
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
-  }
-}
-</script>
-</head>
-<body>
-    <div id="root"></div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/webp">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+        <link rel="icon" href="assets/images/favicon.png" type="image/webp">
+        <title>stickypaw</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Snowfall Background Animation -->
+        <section class="animated-background">
+            <div id="stars1"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </section>
+        <!-- End of Snowfall Background Animation -->
+
+        <div class="min-h-full flex-h-center" id="background_div">
+            <input type="hidden" value="https://bio.link" id="app-url">
+                <input type="hidden" value="null" id="is-featured">
+                    <canvas id="bg-canvas" class="background-overlay"></canvas>
+                </input>
+            </input>
+
+            <div class="mt-48 page-full-wrap relative ">
+                <input type="hidden" value="creator-page" id="page-type">
+                <img class="display-image m-auto" data-src="assets/images/logo.png" src="assets/images/logo.png" alt="[Your photo alt]"/>
+                <h2 class="page-title page-text-color page-text-font mt-16 text-center">stickypaw</h2>
+                       
+                <div class="mt-24">
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank"  class="page-item-each py-10 flex-both-center" href="https://x.com/stickypaw_" data-id="261652" data-type="page_item">
+                            <img class="link-each-image" data-src="assets/images/x.png" src="assets/images/x.png" alt="X - @stickypaw_"/>
+                            <span class=" item-title text-center">X - @stickypaw_</span>
+                        </a>
+                    </div>        
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank"  class="page-item-each py-10 flex-both-center" href="https://bsky.app/profile/stickypaw.net" data-id="261685" data-type="page_item">
+                            <img class="link-each-image" data-src="assets/images/bluesky.png" src="assets/images/bluesky.png" alt="Bluesky - @stickypaw.bsky.social"/>
+                            <span class=" item-title text-center">Bluesky - @stickypaw.net</span>
+                        </a>
+                    </div>    
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank"  class="page-item-each py-10 flex-both-center" href="https://www.youtube.com/@stickypaw_" data-id="261685" data-type="page_item">
+                            <img class="link-each-image" data-src="assets/images/youtube.png" src="assets/images/youtube.png" alt="YouTube - @stickypaw_"/>
+                            <span class=" item-title text-center">YouTube - @stickypaw_</span>
+                        </a>
+                    </div>                            
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank"  class="page-item-each py-10 flex-both-center" href="https://www.mixcloud.com/stickypaw/" data-id="261685" data-type="page_item">
+                            <img class="link-each-image" data-src="assets/images/mixcloud.png" src="assets/images/mixcloud.png" alt="Mixcloud - stickypaw"/>
+                            <span class=" item-title text-center">Mixcloud - stickypaw</span>
+                        </a>
+                    </div>
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank"  class="page-item-each py-10 flex-both-center" href="https://www.youtube.com/watch?v=IJtQe-9B89A&t=43s" data-id="261685" data-type="page_item">
+                            <img class="link-each-image" data-src="assets/images/nsfw.png" src="assets/images/nsfw.png" alt="NSFW Mode"/>
+                            <span class=" item-title text-center">NSFW Mode</span>
+                        </a>
+                    </div>    
+                </div>                                                                                
+            </div>
+        </div>
+    </body>
+
+<!--     <script  src="assets/js/snowfall.js"></script> -->
+   
 </html>
