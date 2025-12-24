@@ -16,7 +16,8 @@ body {
   min-height: 100%;
   font-family: "Sora", sans-serif;
   color: var(--text);
-  background: transparent;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  background-attachment: fixed;
 }
 
 .page {
@@ -314,6 +315,14 @@ html.rainbow-mode #stars2 {
 
 html.rainbow-mode #stars3 {
   animation-duration: 7.8s;
+}
+
+#rainbow-toggle .link-title {
+  font-family: "Orbitron", "Sora", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  line-height: 1.1;
+  font-size: 0.95rem;
 }
 
 @media (max-width: 600px) {
